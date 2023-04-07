@@ -1,0 +1,23 @@
+﻿@model Category
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="post">
+    <div>
+        <h2>
+            Create Category
+        </h2>
+    </div>
+    <div>
+        <label asp-for="Name"></label> 
+        <input asp-for="Name"></input>
+    </div>
+    <div>
+        <label asp-for="DisplayOrder"></label>
+        <input asp-for="DisplayOrder"></input>
+    </div>
+    <button type="submit">Create</button>
+    <a asp-controller="Category" asp-action="Index">Back To List</a>
+</form>
